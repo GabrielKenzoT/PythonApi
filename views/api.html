@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container" style="background-color: #ffffff; border-radius: 8px;">
+<div class="container" style="border-radius: 8px;">
     <div class="row">
         {% for anime in animeList %}
-        <div class="col-md-3 m-auto">
+        <div class="col-md-3 m-auto py-3" id="moldura">
             <div class="card" style="width: 16rem;">
-                <img src="{{anime.image}}">
+                <img src="{{anime.movie_banner}}">
                 <div class="card-body">
                     <h5>{{anime.title}}</h5>
-                    <p>Diretor: {{anime.director}}</p>
-                    <p>Data de lançamento: {{anime.release_date}}</p>
-                    <p>Score: {{anime.rt_score}} </p>
+                    <p class="col-lg-10 fs-10 mb-1">Diretor: {{anime.director}}</p>
+                    <p class="col-lg-10 fs-10 mb-1">Data de lançamento: {{anime.release_date}}</p>
+                    <p class="col-lg-10 fs-10 mb-1">Score: {{anime.rt_score}} </p>
                 </div>
             </div>
         </div>

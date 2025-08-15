@@ -42,3 +42,32 @@
     padding-left: 100px;
     padding-right: 50px;
 }
+#moldura{
+    background-image: url('/static/img/moldura.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#animeList .card-moldura {
+    background-color: #ffffff;       /* Fundo do card */
+    border: 6px solid #8aedfe;       /* Cor da borda da moldura */
+    border-radius: 15px;             /* Bordas arredondadas */
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.4); /* Sombra 3D */
+    padding: 10px;                   /* Espaço interno para o conteúdo não grudar na borda */
+    height: 100%;                     /* Garante que a imagem e texto fiquem dentro da moldura */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#animeList .card-moldura img {
+    border-radius: 10px;             /* Faz a imagem arredondar junto com a moldura */
+    margin-bottom: 10px;
+}
+
+#animeList .card-moldura h5,
+#animeList .card-moldura p {
+    text-align: center;               /* Centraliza os textos */
+}
