@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="p-5 mb-4 bg-body-tertiary rounded-3" id="imagem">
+    <div class="container-fluid py-5">
+         <h3 class="display-3 fw-bold text-white" id="h">AnimeFriends</h1> 
+         <p class="col-md-8 fs-4 text-white" id="p">Uma Plataforma de indicações de filmes em estilo de Anime em especial o Studio Ghilbe</p> 
+         <button class="btn btn-primary btn-lg" type="button">
+              <a class="nav-link" href="{{url_for('api')}}">Veja a Lista</a>
+         </button> 
+    </div> 
+</div>
+{% endblock content %}

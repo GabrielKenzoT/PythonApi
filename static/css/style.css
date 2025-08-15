@@ -1,0 +1,12 @@
+#imagem{
+    background-image: url('/static/img/studio.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#h{
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+#p{
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}

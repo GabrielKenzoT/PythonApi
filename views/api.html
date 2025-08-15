@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="background-color: #f0f0f0; border-radius: 8px;">
+    <div class="row">
+        {% for anime in animeList %}
+        <div class="col-md-3 m-auto">
+            <div class="card" style="width: 16rem;">
+                <img src="{{anime.image}}">
+                <div class="card-body">
+                    <h5>{{anime.title}}</h5>
+                    <p>Direto: {{anime.director}}</p>
+                    <p>Data de lançamento: {{anime.release_date}}</p>
+                    <p>Score: {{anime.rt_score}} </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
