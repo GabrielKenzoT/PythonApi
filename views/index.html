@@ -3,12 +3,34 @@
 {% block content %}
 
 <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="imagem">
-    <div class="container-fluid py-5">
+    <div class="container-fluid" id="conteudoimagem">
          <h3 class="display-3 fw-bold text-white" id="h">AnimeFriends</h1> 
-         <p class="col-md-8 fs-4 text-white" id="p">Uma Plataforma de indicações de filmes em estilo de Anime em especial o Studio Ghilbe</p> 
+         <p class="col-md-8 fs-4 text-white" id="p">Uma Plataforma para filmes do Studio Ghilpe uma dos studios mais aclamados da historia.</p> 
          <button class="btn btn-primary btn-lg" type="button">
               <a class="nav-link" href="{{url_for('api')}}">Veja a Lista</a>
          </button> 
     </div> 
 </div>
+
+<div class="row align-items-center g-lg-5 py-5">
+    <!-- Texto do lado esquerdo -->
+    <div class="col-lg-7 text-center text-lg-start" id="custom-padding">
+        <h1 class="display-4 fw-bold lh-1 mb-3 text-white">
+           Hayao Miyazaki é o diretor mais famoso do Studio Ghibli
+        </h1>
+        <p class="col-lg-10 fs-4 text-white">
+          Hayao Miyazaki é um animador, cineasta, roteirista, escritor e artista de mangá japonês. É cofundador do Studio Ghibli, uma companhia de cinema e animação, e conquistou reconhecimento e aclamação internacional pela qualidade de seus vários longas-metragens de animação, os quais normalmente escreve e dirige. É amplamente considerado um dos principais nomes da indústria de animação japonesa.
+        </p>
+    </div>
+
+    <!-- Formulário do lado direito -->
+    <div class="col-md-10 mx-auto col-lg-5" style="padding-right: 50px;">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <!-- Email -->
+            <div class="form-floating mb-3" id="sensei">
+            </div>
+        </form>
+    </div>
+</div>
+
 {% endblock content %}

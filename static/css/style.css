@@ -1,12 +1,44 @@
+#background{
+    background-color: #1F2A38;
+    padding: 0;                 
+}
+
+#nav{
+    background-color: #8aedfe;
+    overflow: 'hidden'
+}
+#logo{
+    width: 90px;
+    height: 100px;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 5px;
+}
 #imagem{
     background-image: url('/static/img/studio.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
+    height: 550px;
+}
+#sensei{
+    background-image: url('/static/img/sensei.jpg'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 300px;
 }
 #h{
     text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 #p{
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+#conteudoimagem{
+    padding-top: 60px;
+}
+#custom-padding {
+    padding-left: 100px;
+    padding-right: 50px;
 }
