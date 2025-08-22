@@ -2,10 +2,13 @@
 
 {% block content %}
 
-<div class="p-5 mb-4 bg-body-tertiary rounded-3" id="imagem">
-    <div class="container-fluid" id="conteudoimagem">
+<div class="p-5 mb-4 bg-body-tertiary rounded-3 position-relative" id="imagem">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 rounded-3"></div>
+    <div class="container-fluid position-relative z-2" id="conteudoimagem">
          <h3 class="display-3 fw-bold text-white" id="h">AnimeFriends</h1> 
-         <p class="col-md-8 fs-4 text-white" id="p">Uma Plataforma para filmes do Studio Ghilpe uma dos studios mais aclamados da historia.</p> 
+         <p class="col-md-8 fs-4 text-white" id="p">
+            Uma Plataforma para filmes do Studio Ghibli uma dos studios mais aclamados da historia.
+        </p> 
          <button class="btn btn-primary btn-lg" type="button">
               <a class="nav-link" href="{{url_for('api')}}">Veja a Lista</a>
          </button> 
@@ -16,7 +19,7 @@
     <!-- Texto do lado esquerdo -->
     <div class="col-lg-7 text-center text-lg-start" id="custom-padding">
         <h1 class="display-4 fw-bold lh-1 mb-3 text-white">
-           Hayao Miyazaki é o diretor mais famoso do Studio Ghibli
+           Hayao Miyazaki é o diretor mais famoso do Studio Hhibli
         </h1>
         <p class="col-lg-10 fs-4 text-white">
           Hayao Miyazaki é um animador, cineasta, roteirista, escritor e artista de mangá japonês. É cofundador do Studio Ghibli, uma companhia de cinema e animação, e conquistou reconhecimento e aclamação internacional pela qualidade de seus vários longas-metragens de animação, os quais normalmente escreve e dirige. É amplamente considerado um dos principais nomes da indústria de animação japonesa.

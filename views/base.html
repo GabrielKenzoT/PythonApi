@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="height: 85px;" id="nav">
         <a class="navbar-brand" href="{{url_for('home')}}" >
-          <img src="/static/img/logo.png" alt="Logo" id="logo">
+          <img src="/static/img/logo.png" alt="Logo" id="logo" style=" max-height: 80px; object-fit: cover; padding-left: 10px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link fw-bold" href="{{url_for('home')}}" style="color: #5A7D9A;">Início</a>
+              <a class="nav-link fw-bold" href="{{url_for('home')}}" style="color: #ffffff;">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="{{url_for('api')}}" style="color: #5A7D9A;"  >Filmes Studio Ghilbe</a>
+              <a class="nav-link fw-bold" href="{{url_for('api')}}" style="color: #ffffff;"  >Filmes Studio Ghilbe</a>
             </li>
           </ul>
         </div>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="background-color: #f0f0f0; border-radius: 8px;; padding: 20px;">
+    <div class="row">
+        <div class="col-md-10 m-auto">
+            <a href="{{url_for('api')}}" class="btn btn-dark mb-3">
+                Voltar para a lista de filmes
+            </a>
+            <div class="card p-3">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="{{animeInfo.image}}" class="img-fluid rounded" style="max-height: 400px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body m-auto">
+                            <h3 style="font-size:40px ">{{animeInfo.title}}</h5>
+                            <p class="ps-2"><strong>Diretor: </strong>{{animeInfo.director}}</p>
+                            <p class="ps-2"><strong>Produtor: </strong> {{animeInfo.producer}}</p>
+                            <p class="ps-2"><strong>Data: </strong> {{animeInfo.release_date}}</p>
+                            <p class="ps-2"><strong>Tempo: </strong> {{animeInfo.running_time}} minutos</p>
+                            <p class="ps-2"><strong>Nota: </strong> {{animeInfo.rt_score}}/100</p>
+                            <p class="ps-2"><strong>Descrição: </strong> {{animeInfo.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
